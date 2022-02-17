@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const { getRandomColor } = require('./randomColor')
+const { getRandomColor } = require('../randomColor')
 
 async function sendEmbedMessage(message, bichoSorteado, numeroSorteado){
   const bicho = bichoSorteado[0]
