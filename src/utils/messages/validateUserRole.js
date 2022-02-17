@@ -1,8 +1,18 @@
+const get = require('lodash/get')
+
 async function validateUserRole(message){
 
-  let adminRole = message.member.roles.cache.find(r => r.name === "ADM Master")
+  const roles = get(message, 'member.roles.cache', [])
+  const channel = get(message, 'channel.type', '')
 
-  if(message.content === "!bicho" && !adminRole){
+  let allowedRoles = ["ADM Master", "Amigões", "ParceriaShow"]
+
+  let {name} = roles.find(r => r.name)
+
+  if(message.content === "!bicho" && !allowedRoles.join().includes(name)){
+    return false
+  }
+  else if(channel === "dm"){
     return false
   }
 
