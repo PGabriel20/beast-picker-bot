@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 const appToken = process.env.APP_TOKEN
 
 module.exports = {
