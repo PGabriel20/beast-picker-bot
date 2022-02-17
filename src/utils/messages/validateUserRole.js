@@ -5,7 +5,7 @@ async function validateUserRole(message){
   const roles = get(message, 'member.roles.cache', [])
   const channel = get(message, 'channel.type', '')
 
-  let allowedRoles = ["ADM Master", "Amigões", "ParceriaShow"]
+  let allowedRoles = ["ADM Master", "Amigões"]
 
   if(roles.length !== 0){
     let {name} = roles.find(r => r.name)
