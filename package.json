@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.5.1",
-    "discord.js-commando": "^0.12.2"
+    "discord.js-commando": "^0.12.2",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "dotenv": "^16.0.0",
