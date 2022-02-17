@@ -1,0 +1,21 @@
+{
+  "name": "bstpicker",
+  "version": "1.0.0",
+  "description": "Discord bot",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bielp",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {
+    "discord.js-commando": "^0.12.2",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

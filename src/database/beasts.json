@@ -1,0 +1,65 @@
+{
+  "beasts": [
+    {
+      "name": "Jaré",
+      "numbers": [23,34,72],
+      "imageURL": "https://i.imgur.com/nmv64Ww.png"
+    },
+    {
+      "name": "Golira",
+      "numbers": [6,66,99],
+      "imageURL": "https://i.imgur.com/N2FzwRs.png"
+    },
+    {
+      "name": "Paraguayo",
+      "numbers": [30,20,80],
+      "imageURL": "https://i.imgur.com/ihOnHI3.png"
+    },
+    {
+      "name": "Caprivada",
+      "numbers": [44,7,15],
+      "imageURL": "https://i.imgur.com/1vElhC5.png"
+    },
+    {
+      "name": "ET Bilu",
+      "numbers": [10,42,"00"],
+      "imageURL": "https://i.imgur.com/Vmci3Ki.png"
+    },
+    {
+      "name": "Chupacu",
+      "numbers": [69,96,2],
+      "imageURL": "https://i.imgur.com/1Uqvh3t.png"
+    },
+    {
+      "name": "Sacy",
+      "numbers": [1,23,60],
+      "imageURL": "https://i.imgur.com/D4B0LI7.png"
+    },
+    {
+      "name": "Catapora",
+      "numbers": [3,24,70],
+      "imageURL": "https://i.imgur.com/zMDVJ9D.png"
+    },
+    {
+      "name": "Zoi de gato",
+      "numbers": [16,12,9],
+      "imageURL": "https://i.imgur.com/13dnemM.png"
+    },
+    {
+      "name": "Choris",
+      "numbers": [8,13,88],
+      "imageURL": "https://i.imgur.com/13dnemM.png"
+    },
+    {
+      "name": "Vitinho",
+      "numbers": [26,11,48],
+      "imageURL": "https://i.imgur.com/R1jtL4K.png"
+    },
+    {
+      "name": "Negao da BL",
+      "numbers": [2,22,73],
+      "imageURL": "https://i.imgur.com/FNQLD3C.png"
+    }
+  ]
+  
+}
