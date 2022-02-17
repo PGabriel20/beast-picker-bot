@@ -7,16 +7,20 @@ async function validateUserRole(message){
 
   let allowedRoles = ["ADM Master", "Amigões", "ParceriaShow"]
 
-  let {name} = roles.find(r => r.name)
+  if(roles.length > 0){
+    let {name} = roles.find(r => r.name)
+  
+    if(message.content === "!bicho" && !allowedRoles.join().includes(name)){
+      return false
+    }
+    else if(channel === "dm"){
+      return false
+    }
 
-  if(message.content === "!bicho" && !allowedRoles.join().includes(name)){
-    return false
+    return true
   }
-  else if(channel === "dm"){
-    return false
-  }
-
-  return true
+  
+  return false
 }
 
 module.exports = {validateUserRole}
