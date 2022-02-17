@@ -7,7 +7,7 @@ async function validateUserRole(message){
 
   let allowedRoles = ["ADM Master", "Amigões", "ParceriaShow"]
 
-  if(roles.length > 0){
+  if(roles.length !== 0){
     let {name} = roles.find(r => r.name)
   
     if(message.content === "!bicho" && !allowedRoles.join().includes(name)){
@@ -16,10 +16,10 @@ async function validateUserRole(message){
     else if(channel === "dm"){
       return false
     }
-
+  
     return true
   }
-  
+
   return false
 }
 
