@@ -7,7 +7,7 @@ async function validateUserRole(message){
   const messageAuthor = get(message, 'author.id', '')
 
   if(roles.length !== 0){
-    let {id} = roles.find(role => role.name === "ParceriaShow")
+    let {id} = roles.find(role => role.name === "Amigões")
     let userIdWithRole = roles.get(id).members.map(m=>m.user.id)
   
     if(message.content === "!bicho" && !messageAuthor.includes(userIdWithRole)){
