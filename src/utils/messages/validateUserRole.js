@@ -4,13 +4,21 @@ async function validateUserRole(message){
 
   const roles = get(message, 'member.roles.cache', [])
   const channel = get(message, 'channel.type', '')
+  const messageAuthor = get(message, 'author.id', '')
 
-  let allowedRoles = ["ADM Master", "Amigões"]
+  const allowedRoles = ["RPG", "Amigões"]
 
   if(roles.length !== 0){
-    let {name} = roles.find(r => r.name)
+
+    let allowedUserIds = []
+
+    allowedRoles.forEach(item => {
+      let {id} = roles.find(role => role.name === item)
+
+      allowedUserIds.push(roles.get(id).members.map(m=>m.user.id))
+    })
   
-    if(message.content === "!bicho" && !allowedRoles.join().includes(name)){
+    if(message.content === "!bicho" && ! allowedUserIds.flat().includes(messageAuthor)){
       return false
     }
     else if(channel === "dm"){
